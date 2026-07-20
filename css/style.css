@@ -1,0 +1,293 @@
+/* Index Html */
+<style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:#06080d;
+            font-size: 18px;
+        }
+       .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 5%;
+        padding-top: 2.1rem ;
+        font-weight: 800;
+
+        background-color: transparent;
+
+       }
+       .header button {
+        padding: 0.7rem;
+        font-size: 1rem;
+       }
+       .navbar  {
+        display: flex;
+        gap: 10rem;
+       }
+       .navbar a {
+        text-decoration: underline;
+        color: aliceblue;
+
+       }
+       .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 4rem 5%;
+        height: 5rem;
+        margin-top: 3rem;
+
+
+        
+        color: aliceblue;
+       }
+       .hero-actions{
+        display: flex;
+        gap: 1rem;
+        margin-top: 1.5rem;
+       }
+      
+       .hero h1 {
+        margin: 0;
+        font-size: 3.5rem;
+        text-shadow: 3px 2px 3px rgb(190, 186, 186);
+
+       }
+       .btn {
+            text-decoration: none;
+            padding: 0.8rem;
+            border-radius: 0.70rem;
+
+       }
+       .primary {
+        color: rgb(8, 7, 7);
+        background-color: rgb(210, 205, 205);
+       }
+       .secondary{
+        color: white;
+        background-color: blue;
+       }
+       .skills{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+       }
+       .skills > h2 {
+        font-size: 3rem;
+        margin: 0;
+       }
+       .skills > p {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+       }
+       
+       .skill-groups{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 4rem;
+        margin-top: 1rem;
+        padding-inline: 2rem;
+       }
+       .skill-group{
+        padding: 3rem;
+        background-color: #262c33;
+        border-radius: 1rem;
+
+       }
+       .skill-group li {
+        list-style: none;
+        color: rgb(4, 4, 4);
+        background-color: #fff;
+        padding: 0.7rem;
+        border-radius: 0.5rem;
+        font-size: 1.2rem;
+
+        
+       }
+       .skill-group > h3 {
+        font-size: 1.6rem;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 2.5rem;
+       }
+       .skill-group > ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+        margin-top: 1rem;
+        padding: 0;
+        margin: 0;
+
+
+       }
+      .projects{
+        color: white;
+        margin-top: 5rem;
+
+      }
+      .projects > h3 {
+        text-align: center;
+        font-size: 2.5rem;
+        
+      }
+
+      .project-card img{
+        width: 20rem;
+      }
+      .project-card .backup {
+        width: 18rem;
+      }
+      .project-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background-color: #262c33;
+        padding: 2rem;
+        border-radius: 1rem;
+      }
+      .project-card p {
+        margin-top: 0.5rem;
+        font-size: 1.2rem;
+        line-height: 1.3;
+        text-align: center;
+      }
+      .project-card h2 {
+        text-align: center;
+      }
+      .project-card a {
+        padding: 0.7rem;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        background-color: #fff;
+        color: black;
+      }
+      .project-grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin-top: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        gap: 1rem;
+
+      }
+      .main {
+
+      }
+      .hero-projects{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          position: relative;
+          top: 4.5rem;
+
+
+          
+      }
+      .hero-projects h2 {
+        margin: 0px;
+
+      }
+      .hero-projects p {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+
+        
+      }
+      
+  /* About Page CSS */
+
+      .about-hero{
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        color: white;
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+
+      }
+      .profile-image {
+        width: 115rem;
+        height: 40rem;
+        overflow: hidden;
+          -webkit-mask-image: linear-gradient(
+        to bottom,
+        black 75%,
+        transparent 100%
+    );
+
+    mask-image: linear-gradient(
+        to bottom,
+        black 75%,
+        transparent 100%
+    );
+
+
+
+       
+      }
+      .profile-image img {
+        width: 35rem;
+
+      }
+
+      .about{
+        align-items: center;
+      }
+      #short-about{
+        margin-top: 2rem;
+        font-size: 1.5rem;
+
+      }
+
+      .about-info{
+        margin: 0;
+        color: white;
+      }
+
+      .info-grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 50rem;
+        gap: 2rem 2rem;
+
+
+      }
+      .about-info{
+        display: flex ;
+        justify-content: right; 
+        position: absolute;
+        top: 38rem;
+        left: 35rem;       
+      }
+
+      .info-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #262c33;
+        padding: 1rem;
+        gap: 2rem;
+        width: 18rem;
+        text-align: center;
+        border-radius: 1rem;
+        font-size: 1.2rem;
+        
+      }
+    </style>
+
+    /* projects.html */
