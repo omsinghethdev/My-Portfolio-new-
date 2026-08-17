@@ -220,6 +220,9 @@
 
       }
       .profile-image {
+        position: relative;
+        top: 5rem;
+        left: 0.5rem;
         width: 115rem;
         height: 40rem;
         overflow: hidden;
@@ -240,39 +243,52 @@
        
       }
       .profile-image img {
-        width: 35rem;
+        width: 37rem;
 
       }
 
-      .about{
-        align-items: center;
+      .about h1 {
+        position: absolute;
+        top: 10rem;
+        font-size: 3.5rem;
+      }
+      #sub-about{
+        position: absolute;
+        top: 15rem;
+        font-size: 1.5rem;
       }
       #short-about{
-        margin-top: 2rem;
-        font-size: 1.5rem;
+        line-height: 1.9rem;
+        margin-top: 4rem;
+        font-size: 1.7rem;
 
       }
 
       .about-info{
-        margin: 0;
-        color: white;
+        z-index: 1;
+        position: absolute;
+        top: 38rem;
+        left:  33rem;
+        right: 5rem;
+        
+
+
       }
 
       .info-grid{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        width: 50rem;
-        gap: 2rem 2rem;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+      
+
 
 
       }
-      .about-info{
+      /* .about-info{
         display: flex ;
         justify-content: right; 
-        position: absolute;
-        top: 38rem;
-        left: 35rem;       
-      }
+              
+      } */
 
       .info-card{
         display: flex;
@@ -288,6 +304,111 @@
         font-size: 1.2rem;
         
       }
+      .info-card h3 {
+        margin: 0;
+        font-size: 1.9rem;
+      }
+      .info-card p {
+        margin: 0;
+        margin-bottom: 2rem;
+      }
+
+      /* Contact Html */
+     main {
+      color:white;
+     }
+     .hero-contact{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 3rem;
+
+     }
+     .hero-contact h1{
+      margin: 0;
+     }
+     .hero-contact p {
+        margin: 0;
+        margin-top: 1rem;
+        padding: 0;
+        font-size: 1.5rem;
+
+     }
+     .contact-container{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 4rem;
+     }
+     .contact-right {
+      position: relative;
+      right: 5rem;
+      padding: 4rem;
+      background-color: rgb(28, 27, 27);
+      border-radius: 1rem;
+      width: 25rem;
+      
+     }
+      .contact-right form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 2rem;
+      }
+      .contact-right input {
+        padding: 1rem;
+        margin-bottom: 2rem;
+        border-radius: 0.5rem;
+        font-size: 1.3rem;
+        width: 22rem;
+      }
+      .contact-right textarea {
+        border-radius: 0.5rem;
+        text-align: left;
+        width: 20rem;
+        padding: 2rem;
+      }
+      .contact-right button {
+        border-radius: 1rem;
+        font-size: 1rem;
+        width: 12rem;
+        margin-top: 1rem;
+        padding: 1rem;
+        border: 1px solid black;
+      }
+      .contact-left {
+        display: flex;
+        flex-direction: column;
+        padding: 4rem;
+        margin-top: 3.2rem;
+
+      }
+      .contact-left h3 ,.contact-left p {
+
+        margin: 0;
+
+      }
+
+      .contact-detail {
+        text-align: center;
+        font-size: 2rem;
+      }
+      .social-link {
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+        margin-top: 5rem;
+        border-radius: 1rem;
+        background-color: rgb(44, 43, 43);
+        font-size: 1.5rem;
+
+
+      }
+      .social-link a {
+        text-decoration: none;
+        color: white;
+      }
+
     </style>
 
-    /* projects.html */
+
